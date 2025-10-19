@@ -7,8 +7,9 @@ describe('Login', () => {
   it('Login com dados válidos devem permitir entrada no sistema', () => {
     cy.get('#username').click().type('julio.lima')
     cy.get('#senha').type('123456')
+    cy.screenshot('Após preencher dados válidos do login')
     cy.contains('button', 'Entrar').click()
-
+    cy.screenshot('Após clicar no botão entrar')
     //Asserts
     cy.contains('h4', 'Realizar Transferência').should('be.visible')
   })
