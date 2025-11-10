@@ -8,6 +8,7 @@ lerna-debug.log*
 
 #Screenshot files
 Screenshots/
+reports/
 
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
